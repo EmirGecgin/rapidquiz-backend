@@ -1,3 +1,4 @@
+from drf_spectacular.utils import OpenApiParameter, extend_schema
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -7,6 +8,13 @@ from .serializers import LeaderboardEntrySerializer
 
 
 class LeaderboardView(APIView):
+    @extend_schema(
+        parameters=[
+            OpenApiParameter("period", str, description="day | week | all (varsayılan: all)"),
+            OpenApiParameter("limit", int, description="1-100 arası, varsayılan 20"),
+        ],
+        responses=LeaderboardEntrySerializer(many=True),
+    )
     def get(self, request, slug):
         period = request.query_params.get("period", "all")
         if period not in services.PERIOD_CHOICES:

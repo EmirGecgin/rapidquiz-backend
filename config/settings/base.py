@@ -116,5 +116,7 @@ REST_FRAMEWORK = {
 
 SPECTACULAR_SETTINGS = {
     "TITLE": "RapidQuiz API",
+    "DESCRIPTION": "Girişsiz, hızlı bilgi yarışması için backend API. Web ve mobil istemcilere hizmet verir.",
     "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
 }

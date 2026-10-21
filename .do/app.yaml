@@ -1,0 +1,71 @@
+name: rapidquiz
+region: fra
+
+databases:
+  - name: db
+    engine: PG
+    version: "16"
+    production: true
+
+services:
+  - name: api
+    dockerfile_path: Dockerfile
+    github:
+      repo: EmirGecgin/rapidquiz-backend
+      branch: main
+      deploy_on_push: true
+    http_port: 8000
+    instance_count: 1
+    instance_size_slug: apps-s-1vcpu-0.5gb
+    health_check:
+      http_path: /api/v1/health/
+    envs:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings.prod
+      - key: DATABASE_URL
+        value: ${db.DATABASE_URL}
+      # Gerçek dağıtımdan önce DO panelinde güçlü bir değerle değiştirilmeli.
+      - key: SECRET_KEY
+        type: SECRET
+        value: CHANGE_ME
+      - key: ALLOWED_HOSTS
+        value: ${APP_DOMAIN}
+      # Frontend static site'ın gerçek domainiyle değiştirilmeli.
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://CHANGE_ME_FRONTEND_DOMAIN
+      - key: CSRF_TRUSTED_ORIGINS
+        value: https://CHANGE_ME_FRONTEND_DOMAIN
+      - key: ADMIN_URL
+        value: admin/
+
+jobs:
+  - name: migrate
+    kind: PRE_DEPLOY
+    dockerfile_path: Dockerfile
+    github:
+      repo: EmirGecgin/rapidquiz-backend
+      branch: main
+    run_command: python manage.py migrate --noinput
+    envs:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings.prod
+      - key: DATABASE_URL
+        value: ${db.DATABASE_URL}
+      - key: SECRET_KEY
+        type: SECRET
+        value: CHANGE_ME
+
+static_sites:
+  - name: web
+    github:
+      repo: EmirGecgin/rapidquiz-frontend
+      branch: main
+      deploy_on_push: true
+    build_command: npm ci && npm run build
+    output_dir: dist
+    catchall_document: index.html
+    envs:
+      # Backend API servisinin gerçek domainiyle değiştirilmeli.
+      - key: VITE_API_BASE_URL
+        scope: BUILD_TIME
+        value: https://CHANGE_ME_API_DOMAIN/api/v1

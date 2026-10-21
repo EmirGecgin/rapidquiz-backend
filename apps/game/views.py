@@ -1,14 +1,24 @@
+from drf_spectacular.utils import extend_schema
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from . import services
-from .serializers import AnswerRequestSerializer, FinishRequestSerializer, StartSessionRequestSerializer
+from .serializers import (
+    AnswerRequestSerializer,
+    AnswerResponseSerializer,
+    FinishRequestSerializer,
+    FinishResponseSerializer,
+    NextQuestionResponseSerializer,
+    SessionCreateResponseSerializer,
+    StartSessionRequestSerializer,
+)
 from .throttling import AnswerThrottle, SessionCreateThrottle
 
 
 class SessionCreateView(APIView):
     throttle_classes = [SessionCreateThrottle]
 
+    @extend_schema(request=StartSessionRequestSerializer, responses=SessionCreateResponseSerializer)
     def post(self, request):
         serializer = StartSessionRequestSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -30,6 +40,7 @@ class SessionCreateView(APIView):
 
 
 class NextQuestionView(APIView):
+    @extend_schema(request=None, responses=NextQuestionResponseSerializer)
     def post(self, request, session_id):
         session = services.get_authenticated_session(session_id, request.headers.get("X-Session-Token"))
         return Response(services.next_question(session))
@@ -38,6 +49,7 @@ class NextQuestionView(APIView):
 class SubmitAnswerView(APIView):
     throttle_classes = [AnswerThrottle]
 
+    @extend_schema(request=AnswerRequestSerializer, responses=AnswerResponseSerializer)
     def post(self, request, session_id):
         session = services.get_authenticated_session(session_id, request.headers.get("X-Session-Token"))
         serializer = AnswerRequestSerializer(data=request.data)
@@ -48,6 +60,7 @@ class SubmitAnswerView(APIView):
 
 
 class FinishSessionView(APIView):
+    @extend_schema(request=FinishRequestSerializer, responses=FinishResponseSerializer)
     def post(self, request, session_id):
         session = services.get_authenticated_session(session_id, request.headers.get("X-Session-Token"))
         serializer = FinishRequestSerializer(data=request.data)
