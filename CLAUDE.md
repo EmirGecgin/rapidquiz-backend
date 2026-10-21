@@ -3,8 +3,9 @@
 Bu dosya her fazdan sonra güncellenir. Yeni bir oturum başlarken önce bu dosyayı oku.
 
 ## Durum
-- Son tamamlanan faz: **(henüz yok)**
-- Sıradaki faz: **B1 — İskelet**
+- Son tamamlanan faz: **B1 — İskelet** (2026-10-21)
+- Sıradaki faz: **B2 — catalog**
+- B1'de yapılanlar: `config/settings/{base,dev,prod}.py`, `apps/{catalog,game,leaderboard}` (sadece AppConfig, modelsiz), `Dockerfile` (multi-stage, libpq5 runtime, build-only SECRET_KEY ile collectstatic), `docker-compose.yml` (postgres:16 + web, host portu 5433 — yerelde 5432 doluydu), `.env.example`, CORS (`django-cors-headers`), DRF `EXCEPTION_HANDLER` → `config/exceptions.py` (tüm hatalar `{"error":{"code","message"}}`'a sarılıyor; game app'i ileride kendi exception sınıflarında `default_code` kullanarak `session_expired` vb. kodları aynen geçirebilir), `GET /api/v1/health/` (DB `SELECT 1` kontrolü) + testler (`tests/test_health.py`, pytest-django). `docker compose exec web python -m pytest` ile doğrulandı (2 passed), `manage.py check` temiz, admin `ADMIN_URL` env'den okunuyor.
 - Not: Frontend ayrı repoda (`rapidquiz-frontend`). Bu repo mobil istemcilere de hizmet verecek şekilde tasarlanıyor.
 
 ## Kurallar (her fazda geçerli)
