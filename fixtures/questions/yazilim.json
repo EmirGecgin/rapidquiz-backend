@@ -1,0 +1,23 @@
+{
+  "category": {"slug": "yazilim", "name": "Yazılım", "icon": "code", "color": "#A9B8F0", "order": 3},
+  "questions": [
+    {
+      "text": "HTML açılımı nedir?",
+      "difficulty": "easy",
+      "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Home Tool Markup Language", "Hyperlink Text Language"],
+      "answer": 0
+    },
+    {
+      "text": "Python dilinde yorum satırı hangi karakterle başlar?",
+      "difficulty": "medium",
+      "choices": ["//", "#", "--", "/*"],
+      "answer": 1
+    },
+    {
+      "text": "İkili (binary) sistemde kaç farklı rakam kullanılır?",
+      "difficulty": "hard",
+      "choices": ["2", "4", "8", "10"],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": {"slug": "spor", "name": "Spor", "icon": "trophy", "color": "#8EC5E8", "order": 1},
+  "questions": [
+    {
+      "text": "Bir futbol takımında sahada kaç oyuncu bulunur?",
+      "difficulty": "easy",
+      "choices": ["9", "10", "11", "12"],
+      "answer": 2
+    },
+    {
+      "text": "Yaz Olimpiyat Oyunları kaç yılda bir düzenlenir?",
+      "difficulty": "medium",
+      "choices": ["3", "4", "5", "6"],
+      "answer": 1
+    },
+    {
+      "text": "Basketbolda bir maç normal sürede kaç periyottan oluşur?",
+      "difficulty": "hard",
+      "choices": ["1", "2", "3", "4"],
+      "answer": 3
+    }
+  ]
+}

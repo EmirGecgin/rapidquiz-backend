@@ -1,0 +1,23 @@
+{
+  "category": {"slug": "genel-kultur", "name": "Genel Kültür", "icon": "globe", "color": "#F5C98B", "order": 2},
+  "questions": [
+    {
+      "text": "Dünyanın en büyük okyanusu hangisidir?",
+      "difficulty": "easy",
+      "choices": ["Atlas Okyanusu", "Pasifik Okyanusu", "Hint Okyanusu", "Arktik Okyanusu"],
+      "answer": 1
+    },
+    {
+      "text": "Bir hafta kaç gündür?",
+      "difficulty": "medium",
+      "choices": ["5", "6", "7", "8"],
+      "answer": 2
+    },
+    {
+      "text": "Periyodik tabloda en hafif element hangisidir?",
+      "difficulty": "hard",
+      "choices": ["Helyum", "Oksijen", "Hidrojen", "Karbon"],
+      "answer": 2
+    }
+  ]
+}

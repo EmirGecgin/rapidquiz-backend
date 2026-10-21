@@ -1,0 +1,23 @@
+{
+  "category": {"slug": "yapay-zeka-teknoloji", "name": "Yapay Zeka & Teknoloji", "icon": "cpu", "color": "#C6A9E8", "order": 4},
+  "questions": [
+    {
+      "text": "Yapay zekanın İngilizce kısaltması nedir?",
+      "difficulty": "easy",
+      "choices": ["AI", "IT", "IoT", "VR"],
+      "answer": 0
+    },
+    {
+      "text": "Etiketli verilerle yapılan öğrenme türüne ne denir?",
+      "difficulty": "medium",
+      "choices": ["Pekiştirmeli öğrenme", "Gözetimli öğrenme", "Gözetimsiz öğrenme", "Transfer öğrenme"],
+      "answer": 1
+    },
+    {
+      "text": "CPU açılımı nedir?",
+      "difficulty": "hard",
+      "choices": ["Central Process Unit", "Central Processing Unit", "Core Processing Unit", "Central Processor Union"],
+      "answer": 1
+    }
+  ]
+}

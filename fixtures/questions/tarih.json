@@ -1,0 +1,23 @@
+{
+  "category": {"slug": "tarih", "name": "Tarih", "icon": "landmark", "color": "#E8B4A0", "order": 5},
+  "questions": [
+    {
+      "text": "İstanbul hangi yılda fethedildi?",
+      "difficulty": "easy",
+      "choices": ["1453", "1071", "1299", "1517"],
+      "answer": 0
+    },
+    {
+      "text": "Türkiye Cumhuriyeti hangi yılda ilan edildi?",
+      "difficulty": "medium",
+      "choices": ["1920", "1923", "1929", "1938"],
+      "answer": 1
+    },
+    {
+      "text": "Malazgirt Savaşı hangi yılda yapıldı?",
+      "difficulty": "hard",
+      "choices": ["1453", "1071", "1299", "1517"],
+      "answer": 1
+    }
+  ]
+}

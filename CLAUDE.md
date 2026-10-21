@@ -3,9 +3,10 @@
 Bu dosya her fazdan sonra güncellenir. Yeni bir oturum başlarken önce bu dosyayı oku.
 
 ## Durum
-- Son tamamlanan faz: **B1 — İskelet** (2026-10-21)
-- Sıradaki faz: **B2 — catalog**
-- B1'de yapılanlar: `config/settings/{base,dev,prod}.py`, `apps/{catalog,game,leaderboard}` (sadece AppConfig, modelsiz), `Dockerfile` (multi-stage, libpq5 runtime, build-only SECRET_KEY ile collectstatic), `docker-compose.yml` (postgres:16 + web, host portu 5433 — yerelde 5432 doluydu), `.env.example`, CORS (`django-cors-headers`), DRF `EXCEPTION_HANDLER` → `config/exceptions.py` (tüm hatalar `{"error":{"code","message"}}`'a sarılıyor; game app'i ileride kendi exception sınıflarında `default_code` kullanarak `session_expired` vb. kodları aynen geçirebilir), `GET /api/v1/health/` (DB `SELECT 1` kontrolü) + testler (`tests/test_health.py`, pytest-django). `docker compose exec web python -m pytest` ile doğrulandı (2 passed), `manage.py check` temiz, admin `ADMIN_URL` env'den okunuyor.
+- Son tamamlanan faz: **B2 — catalog** (2026-10-21)
+- Sıradaki faz: **B3 — game**
+- B1'de yapılanlar: `config/settings/{base,dev,prod}.py`, `apps/{catalog,game,leaderboard}` (sadece AppConfig, modelsiz), `Dockerfile` (multi-stage, libpq5 runtime, build-only SECRET_KEY ile collectstatic), `docker-compose.yml` (postgres:16 + web, host portu 5433 — yerelde 5432 doluydu), `.env.example`, CORS (`django-cors-headers`), DRF `EXCEPTION_HANDLER` → `config/exceptions.py` (tüm hatalar `{"error":{"code","message"}}`'a sarılıyor; game app'i ileride kendi exception sınıflarında `default_code` kullanarak `session_expired` vb. kodları aynen geçirebilir), `GET /api/v1/health/` (DB `SELECT 1` kontrolü) + testler.
+- B2'de yapılanlar: `apps/catalog/models.py` (Category, Question, Choice + `validate_choice_set` yardımcı fonksiyonu, `Question.clean()` tutarlılık kontrolü), `admin.py` (QuestionAdmin + ChoiceInline, `ChoiceInlineFormSet.clean()` ile tam 4 şık/tam 1 doğru doğrulaması — kayıt öncesi admin formunda), `GET /api/v1/categories/` (aktif kategoriler, aktif soru `question_count` anotasyonu, `order` sırası), `load_questions` komutu (`fixtures/questions/<slug>.json`, idempotent — aynı (kategori, metin) ikilisi günceller, `--dry-run` atomik rollback, soru ≤90/şık ≤30 karakter + 4 şık/geçerli answer doğrulaması), 5 kategori için 3'er örnek soru fixture'ı yüklü. 11/11 test geçti (model clean, categories API, load_questions idempotency/dry-run/validation), `manage.py check` temiz, gerçek fixture'larla canlı doğrulandı.
 - Not: Frontend ayrı repoda (`rapidquiz-frontend`). Bu repo mobil istemcilere de hizmet verecek şekilde tasarlanıyor.
 
 ## Kurallar (her fazda geçerli)
