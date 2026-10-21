@@ -205,19 +205,26 @@ def finish_session(session, player_name, now=None):
     }
 
 
+def _better_than(reference, ordering_fields):
+    # Translates an order_by-style field tuple into a Q matching rows that rank
+    # strictly ahead of `reference` under that same lexicographic tie-break.
+    query = Q()
+    equal_so_far = Q()
+    for field in ordering_fields:
+        descending = field.startswith("-")
+        name = field[1:] if descending else field
+        value = getattr(reference, name)
+        better = Q(**{f"{name}__gt": value}) if descending else Q(**{f"{name}__lt": value})
+        query |= equal_so_far & better
+        equal_so_far &= Q(**{name: value})
+    return query
+
+
 def compute_rank(session):
     better_count = (
         QuizSession.objects.filter(category=session.category, status=QuizSession.Status.FINISHED, is_hidden=False)
         .exclude(pk=session.pk)
-        .filter(
-            Q(score__gt=session.score)
-            | Q(score=session.score, total_answer_ms__lt=session.total_answer_ms)
-            | Q(
-                score=session.score,
-                total_answer_ms=session.total_answer_ms,
-                finished_at__lt=session.finished_at,
-            )
-        )
+        .filter(_better_than(session, QuizSession.RANKING_ORDER))
         .count()
     )
     return better_count + 1

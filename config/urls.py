@@ -9,4 +9,5 @@ urlpatterns = [
     path("api/v1/health/", health_check, name="health-check"),
     path("api/v1/", include("apps.catalog.urls")),
     path("api/v1/", include("apps.game.urls")),
+    path("api/v1/", include("apps.leaderboard.urls")),
 ]

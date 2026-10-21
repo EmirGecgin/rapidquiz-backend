@@ -7,6 +7,8 @@ from apps.catalog.models import Category, Choice, Question
 
 
 class QuizSession(models.Model):
+    RANKING_ORDER = ("-score", "total_answer_ms", "finished_at")
+
     class Status(models.TextChoices):
         ACTIVE = "active", "Aktif"
         FINISHED = "finished", "Bitti"
