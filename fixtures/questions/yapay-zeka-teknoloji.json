@@ -1,23 +1,35 @@
 {
   "category": {"slug": "yapay-zeka-teknoloji", "name": "Yapay Zeka & Teknoloji", "icon": "cpu", "color": "#C6A9E8", "order": 4},
   "questions": [
-    {
-      "text": "Yapay zekanın İngilizce kısaltması nedir?",
-      "difficulty": "easy",
-      "choices": ["AI", "IT", "IoT", "VR"],
-      "answer": 0
-    },
-    {
-      "text": "Etiketli verilerle yapılan öğrenme türüne ne denir?",
-      "difficulty": "medium",
-      "choices": ["Pekiştirmeli öğrenme", "Gözetimli öğrenme", "Gözetimsiz öğrenme", "Transfer öğrenme"],
-      "answer": 1
-    },
-    {
-      "text": "CPU açılımı nedir?",
-      "difficulty": "hard",
-      "choices": ["Central Process Unit", "Central Processing Unit", "Core Processing Unit", "Central Processor Union"],
-      "answer": 1
-    }
+    {"text": "Yapay zekanın İngilizce kısaltması nedir?", "difficulty": "easy", "choices": ["AI", "IT", "IoT", "VR"], "answer": 0},
+    {"text": "\"Robot\" kelimesi hangi dilden türetilmiştir?", "difficulty": "easy", "choices": ["Almanca", "Çekçe", "Fransızca", "İngilizce"], "answer": 1},
+    {"text": "Akıllı telefon ekranları en çok hangi girdi türünü algılar?", "difficulty": "easy", "choices": ["Ses", "Işık", "Dokunma", "Isı"], "answer": 2},
+    {"text": "\"Wi-Fi\" teknolojisi neyi sağlar?", "difficulty": "easy", "choices": ["Kablolu bağlantı", "Ses kaydı", "Görüntü işleme", "Kablosuz internet"], "answer": 3},
+    {"text": "Bilgisayarın \"beyni\" olarak adlandırılan parça hangisidir?", "difficulty": "easy", "choices": ["İşlemci (CPU)", "Ekran kartı", "Bellek", "Disk"], "answer": 0},
+    {"text": "Akıllı hoparlörler komutları en çok hangi yolla anlar?", "difficulty": "easy", "choices": ["Görüntü tanıma", "Ses tanıma", "Dokunma", "Isı algılama"], "answer": 1},
+    {"text": "\"Bluetooth\" cihazlar arasında neyi sağlar?", "difficulty": "easy", "choices": ["Uzun mesafe internet", "Kablolu veri aktarımı", "Kısa mesafe kablosuz bağlantı", "Uydu bağlantısı"], "answer": 2},
+    {"text": "\"E-mail\" kelimesi neyin kısaltmasıdır?", "difficulty": "easy", "choices": ["Elektronik mesaj", "Hızlı posta", "Elektronik metin", "Elektronik posta"], "answer": 3},
+    {"text": "Klasik bilgisayar fareleri genellikle neyi algılar?", "difficulty": "easy", "choices": ["Hareket", "Ses", "Isı", "Işık"], "answer": 0},
+    {"text": "\"Chatbot\" nedir?", "difficulty": "easy", "choices": ["Donanım parçası", "Sohbet eden yazılım", "Oyun konsolu", "Yazıcı türü"], "answer": 1},
+    {"text": "Akıllı saatler en çok hangi amaçla kullanılır?", "difficulty": "easy", "choices": ["Yemek pişirme", "Araç kullanma", "Sağlık takibi", "Fotoğraf baskı"], "answer": 2},
+    {"text": "Bilgisayar dilinde \"veri\" nasıl ifade edilir?", "difficulty": "easy", "choices": ["Byte", "Bit", "Code", "Data"], "answer": 3},
+    {"text": "Etiketli verilerle yapılan öğrenmeye ne denir?", "difficulty": "medium", "choices": ["Gözetimli öğrenme", "Gözetimsiz öğrenme", "Pekiştirmeli öğrenme", "Transfer öğrenme"], "answer": 0},
+    {"text": "\"Algoritma\" teriminin kökeni kimin adına dayandırılır?", "difficulty": "medium", "choices": ["Öklid", "El-Harezmi", "Pisagor", "Newton"], "answer": 1},
+    {"text": "Yapay sinir ağları hangi biyolojik yapıdan esinlenmiştir?", "difficulty": "medium", "choices": ["Kalp", "Göz", "İnsan beyni", "Kas sistemi"], "answer": 2},
+    {"text": "\"IoT\" kısaltması neyi ifade eder?", "difficulty": "medium", "choices": ["İnternet Operasyon Teknolojisi", "İç Operasyon Takımı", "Entegre Nesne Teknolojisi", "Nesnelerin İnterneti"], "answer": 3},
+    {"text": "Görüntü işlemede sıkça kullanılan sinir ağı türü hangisidir?", "difficulty": "medium", "choices": ["Evrişimli sinir ağı", "Karar ağacı", "Doğrusal regresyon", "K-means"], "answer": 0},
+    {"text": "Makine öğrenmesi yapay zekanın hangi alt dalıdır?", "difficulty": "medium", "choices": ["Donanım tasarımı", "Verilerden öğrenme", "Ağ güvenliği", "Grafik tasarım"], "answer": 1},
+    {"text": "Akıllı telefonlarda yüz tanıma hangi teknoloji türüne girer?", "difficulty": "medium", "choices": ["Ses tanıma", "Konum tanıma", "Biyometrik tanıma", "Dokunma tanıma"], "answer": 2},
+    {"text": "\"Büyük veri\" (big data) terimi neyi ifade eder?", "difficulty": "medium", "choices": ["Küçük dosyalar", "Tek bir veritabanı", "Basit tablolar", "Çok büyük veri kümeleri"], "answer": 3},
+    {"text": "Otonom araçlar çevreyi algılamak için en çok hangi sensörü kullanır?", "difficulty": "medium", "choices": ["Lidar", "Mikrofon", "Termometre", "Barometre"], "answer": 0},
+    {"text": "\"Sanal gerçeklik\" (VR) kullanıcıya ne sunar?", "difficulty": "medium", "choices": ["Gerçek dünya üzerine katman", "Tamamen dijital ortam", "Sesli asistan", "Kablosuz şarj"], "answer": 1},
+    {"text": "AR ile VR arasındaki temel fark nedir?", "difficulty": "medium", "choices": ["AR tamamen dijitaldir", "İkisi aynıdır", "AR gerçek dünyaya ekler", "AR yalnızca seslidir"], "answer": 2},
+    {"text": "Bulut depolama verileri nerede saklar?", "difficulty": "medium", "choices": ["Yalnızca telefonda", "Yalnızca USB'de", "Yalnızca CD'de", "Uzak sunucularda"], "answer": 3},
+    {"text": "\"Turing Testi\" neyi ölçmeyi amaçlar?", "difficulty": "hard", "choices": ["Makinenin insan gibi düşünmesi", "İnternet hızı", "Bellek kapasitesi", "Ekran çözünürlüğü"], "answer": 0},
+    {"text": "Yapay zekanın öncülerinden kabul edilen bilim insanı kimdir?", "difficulty": "hard", "choices": ["Albert Einstein", "Alan Turing", "Isaac Newton", "Nikola Tesla"], "answer": 1},
+    {"text": "\"Derin öğrenme\" hangi yapıyı yoğun şekilde kullanır?", "difficulty": "hard", "choices": ["Basit tablolar", "Tek katmanlı devreler", "Çok katmanlı sinir ağları", "Analog sinyaller"], "answer": 2},
+    {"text": "Kuantum bilgisayarlar klasik bitler yerine neyi kullanır?", "difficulty": "hard", "choices": ["Byte", "Pixel", "Transistör", "Kübit"], "answer": 3},
+    {"text": "\"Algoritmik önyargı\" terimi en çok neyi ifade eder?", "difficulty": "hard", "choices": ["Veri önyargısının yansıması", "Yazılım hatası", "Donanım arızası", "Ağ gecikmesi"], "answer": 0},
+    {"text": "İlk programlanabilir bilgisayarlardan biri hangisidir?", "difficulty": "hard", "choices": ["iPhone", "ENIAC", "Macintosh", "PlayStation"], "answer": 1}
   ]
 }

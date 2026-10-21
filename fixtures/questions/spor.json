@@ -1,23 +1,35 @@
 {
   "category": {"slug": "spor", "name": "Spor", "icon": "trophy", "color": "#8EC5E8", "order": 1},
   "questions": [
-    {
-      "text": "Bir futbol takımında sahada kaç oyuncu bulunur?",
-      "difficulty": "easy",
-      "choices": ["9", "10", "11", "12"],
-      "answer": 2
-    },
-    {
-      "text": "Yaz Olimpiyat Oyunları kaç yılda bir düzenlenir?",
-      "difficulty": "medium",
-      "choices": ["3", "4", "5", "6"],
-      "answer": 1
-    },
-    {
-      "text": "Basketbolda bir maç normal sürede kaç periyottan oluşur?",
-      "difficulty": "hard",
-      "choices": ["1", "2", "3", "4"],
-      "answer": 3
-    }
+    {"text": "Bir futbol maçının normal süresi kaç dakikadır?", "difficulty": "easy", "choices": ["90", "60", "120", "45"], "answer": 0},
+    {"text": "Olimpiyat halkalarında kaç halka vardır?", "difficulty": "easy", "choices": ["4", "5", "6", "3"], "answer": 1},
+    {"text": "Bir basketbol takımında sahada kaç oyuncu bulunur?", "difficulty": "easy", "choices": ["4", "6", "5", "7"], "answer": 2},
+    {"text": "Tenisde \"sıfır\" puan nasıl adlandırılır?", "difficulty": "easy", "choices": ["Zero", "Nil", "Ace", "Love"], "answer": 3},
+    {"text": "Bir voleybol setini kazanmak için genelde kaç sayı gerekir?", "difficulty": "easy", "choices": ["25", "15", "21", "30"], "answer": 0},
+    {"text": "Dünya Kupası kaç yılda bir düzenlenir?", "difficulty": "easy", "choices": ["2", "4", "3", "5"], "answer": 1},
+    {"text": "Standart bir golf sahasında kaç delik bulunur?", "difficulty": "easy", "choices": ["9", "16", "18", "20"], "answer": 2},
+    {"text": "Hangisi yüzmenin dört ana stilinden biridir?", "difficulty": "easy", "choices": ["Dalış", "Pike", "Rüzgar", "Kurbağalama"], "answer": 3},
+    {"text": "Bir maratonun resmi mesafesi yaklaşık kaç kilometredir?", "difficulty": "easy", "choices": ["42", "21", "32", "50"], "answer": 0},
+    {"text": "Hangi spor dalında \"ippon\" terimi kullanılır?", "difficulty": "easy", "choices": ["Karate", "Judo", "Tekvando", "Boks"], "answer": 1},
+    {"text": "Satrançta bir oyuncunun başlangıçta kaç piyonu vardır?", "difficulty": "easy", "choices": ["6", "10", "8", "12"], "answer": 2},
+    {"text": "Bowling'de bir oyun kaç turdan (frame) oluşur?", "difficulty": "easy", "choices": ["8", "9", "12", "10"], "answer": 3},
+    {"text": "İlk modern Olimpiyat Oyunları hangi şehirde düzenlendi?", "difficulty": "medium", "choices": ["Atina", "Paris", "Roma", "Londra"], "answer": 0},
+    {"text": "Futbolda \"hat-trick\" kaç gol anlamına gelir?", "difficulty": "medium", "choices": ["2", "3", "4", "5"], "answer": 1},
+    {"text": "2022'ye kadar Dünya Kupası'nı en çok kazanan ülke hangisidir?", "difficulty": "medium", "choices": ["Almanya", "İtalya", "Brezilya", "Arjantin"], "answer": 2},
+    {"text": "Formula 1'de yarışı birinci bitiren kaç puan alır?", "difficulty": "medium", "choices": ["10", "15", "20", "25"], "answer": 3},
+    {"text": "Bir ragbi (union) takımında sahada kaç oyuncu bulunur?", "difficulty": "medium", "choices": ["15", "11", "13", "18"], "answer": 0},
+    {"text": "Modern pentatlon kaç farklı spor dalını bir araya getirir?", "difficulty": "medium", "choices": ["4", "5", "6", "3"], "answer": 1},
+    {"text": "Kriket sporunun doğduğu ülke kabul edilir hangisidir?", "difficulty": "medium", "choices": ["Avustralya", "Hindistan", "İngiltere", "Pakistan"], "answer": 2},
+    {"text": "Judo hangi ülkede doğmuştur?", "difficulty": "medium", "choices": ["Çin", "Kore", "Tayland", "Japonya"], "answer": 3},
+    {"text": "Bir tenis setini kazanmak için en az kaç oyun (game) almak gerekir?", "difficulty": "medium", "choices": ["6", "4", "5", "7"], "answer": 0},
+    {"text": "NBA hangi ülkenin profesyonel basketbol ligidir?", "difficulty": "medium", "choices": ["Kanada", "ABD", "İspanya", "Fransa"], "answer": 1},
+    {"text": "Hangi spor dalında sporcular \"kata\" adlı hareket dizilerini sergiler?", "difficulty": "medium", "choices": ["Judo", "Güreş", "Karate", "Boks"], "answer": 2},
+    {"text": "İlk modern Olimpiyat Oyunları hangi yılda düzenlendi?", "difficulty": "medium", "choices": ["1886", "1900", "1908", "1896"], "answer": 3},
+    {"text": "Dünyanın en eski sürekli düzenlenen tenis turnuvası hangisidir?", "difficulty": "hard", "choices": ["Wimbledon", "US Open", "Fransa Açık", "Avustralya Açık"], "answer": 0},
+    {"text": "Hangi ülke sumo güreşini milli sporu olarak kabul eder?", "difficulty": "hard", "choices": ["Çin", "Japonya", "Moğolistan", "Kore"], "answer": 1},
+    {"text": "Olimpik mesafe triatlonda yüzme bölümü kaç kilometredir?", "difficulty": "hard", "choices": ["0.75", "3", "1.5", "5"], "answer": 2},
+    {"text": "\"Şah mat\" ifadesi hangi dilden gelir?", "difficulty": "hard", "choices": ["Arapça", "Latince", "Sanskritçe", "Farsça"], "answer": 3},
+    {"text": "Modern olimpiyatların kurucusu kabul edilen kişi kimdir?", "difficulty": "hard", "choices": ["Pierre de Coubertin", "Avery Brundage", "Juan Antonio Samaranch", "Thomas Bach"], "answer": 0},
+    {"text": "İlk FIFA Dünya Kupası hangi yılda düzenlendi?", "difficulty": "hard", "choices": ["1920", "1930", "1950", "1960"], "answer": 1}
   ]
 }

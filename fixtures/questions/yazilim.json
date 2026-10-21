@@ -1,23 +1,35 @@
 {
   "category": {"slug": "yazilim", "name": "Yazılım", "icon": "code", "color": "#A9B8F0", "order": 3},
   "questions": [
-    {
-      "text": "HTML açılımı nedir?",
-      "difficulty": "easy",
-      "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Home Tool Markup Language", "Hyperlink Text Language"],
-      "answer": 0
-    },
-    {
-      "text": "Python dilinde yorum satırı hangi karakterle başlar?",
-      "difficulty": "medium",
-      "choices": ["//", "#", "--", "/*"],
-      "answer": 1
-    },
-    {
-      "text": "İkili (binary) sistemde kaç farklı rakam kullanılır?",
-      "difficulty": "hard",
-      "choices": ["2", "4", "8", "10"],
-      "answer": 0
-    }
+    {"text": "HTML açılımı nedir?", "difficulty": "easy", "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Home Tool Markup Language", "Hyperlink Text Language"], "answer": 0},
+    {"text": "CSS açılımı nedir?", "difficulty": "easy", "choices": ["Computer Style System", "Cascading Style Sheets", "Creative Style Sheets", "Code Style Syntax"], "answer": 1},
+    {"text": "Python dilinde yorum satırı hangi karakterle başlar?", "difficulty": "easy", "choices": ["//", "--", "#", "/*"], "answer": 2},
+    {"text": "Bilgisayar programlarındaki hatalara ne ad verilir?", "difficulty": "easy", "choices": ["Patch", "Loop", "Flag", "Bug"], "answer": 3},
+    {"text": "\"www\" kısaltması neyin açılımıdır?", "difficulty": "easy", "choices": ["World Wide Web", "World Web Wide", "Wide World Web", "Web World Wide"], "answer": 0},
+    {"text": "HTML'de bağlantı oluşturmak için hangi etiket kullanılır?", "difficulty": "easy", "choices": ["link", "a", "href", "p"], "answer": 1},
+    {"text": "Yazılımda \"IDE\" neyin kısaltmasıdır?", "difficulty": "easy", "choices": ["İnternet Destek Edici", "İşletim Donanım Elemanı", "Entegre Geliştirme Ortamı", "Interface Design Engine"], "answer": 2},
+    {"text": "Bir web sayfasının adresine ne denir?", "difficulty": "easy", "choices": ["HTML", "CPU", "RAM", "URL"], "answer": 3},
+    {"text": "\"Open source\" kavramı ne anlama gelir?", "difficulty": "easy", "choices": ["Açık kaynak", "Kapalı kod", "Ücretsiz donanım", "Bulut depolama"], "answer": 0},
+    {"text": "JavaScript en çok hangi alanda kullanılır?", "difficulty": "easy", "choices": ["İşletim sistemleri", "Web sayfaları", "Donanım sürücüleri", "Oyun konsolları"], "answer": 1},
+    {"text": "Bilgisayarda verilerin geçici saklandığı belleğe ne denir?", "difficulty": "easy", "choices": ["ROM", "SSD", "RAM", "HDD"], "answer": 2},
+    {"text": "Git yazılımcılar tarafından hangi amaçla kullanılır?", "difficulty": "easy", "choices": ["Grafik tasarım", "Ses düzenleme", "Video oynatma", "Versiyon kontrolü"], "answer": 3},
+    {"text": "İkili (binary) sistemde kaç farklı rakam kullanılır?", "difficulty": "medium", "choices": ["2", "4", "8", "10"], "answer": 0},
+    {"text": "\"API\" kısaltması neyin açılımıdır?", "difficulty": "medium", "choices": ["Advanced Program Integration", "App Programming Interface", "Automated Process Index", "App Process Interface"], "answer": 1},
+    {"text": "SQL hangi amaçla kullanılan bir dildir?", "difficulty": "medium", "choices": ["Web tasarım", "Oyun geliştirme", "Veritabanı sorgulama", "Ağ güvenliği"], "answer": 2},
+    {"text": "Sabit kalan, değişmeyen tanımlamalara ne denir?", "difficulty": "medium", "choices": ["Değişken", "Fonksiyon", "Dizi", "Sabit (constant)"], "answer": 3},
+    {"text": "\"Debugging\" programlamada neyi ifade eder?", "difficulty": "medium", "choices": ["Hata ayıklama", "Kod yazma", "Test yazma", "Tasarım yapma"], "answer": 0},
+    {"text": "Veri bilimi ve yapay zekada sıkça kullanılan dil hangisidir?", "difficulty": "medium", "choices": ["COBOL", "Python", "Fortran", "Pascal"], "answer": 1},
+    {"text": "Bir web sitesinin sunucu tarafı mantığına ne denir?", "difficulty": "medium", "choices": ["Frontend", "Database", "Backend", "Cache"], "answer": 2},
+    {"text": "\"Algoritma\" terimi ne anlama gelir?", "difficulty": "medium", "choices": ["Bilgisayar donanımı", "Grafik kartı", "Ağ protokolü", "Problem çözme adımları"], "answer": 3},
+    {"text": "Bir fonksiyonun kendini çağırmasına ne denir?", "difficulty": "medium", "choices": ["Özyineleme", "Döngü", "Koşul", "Dizi"], "answer": 0},
+    {"text": "Frontend geliştirme en çok hangi alanla ilgilidir?", "difficulty": "medium", "choices": ["Sunucu yönetimi", "Kullanıcı arayüzü", "Veritabanı", "Ağ güvenliği"], "answer": 1},
+    {"text": "Nesne yönelimli programlamada \"class\" nedir?", "difficulty": "medium", "choices": ["Döngü türü", "Veri tipi", "Nesne şablonu", "Hata mesajı"], "answer": 2},
+    {"text": "\"Cloud computing\" (bulut bilişim) ne anlama gelir?", "difficulty": "medium", "choices": ["Yerel disk depolama", "Donanım üretimi", "Ağ kablolaması", "İnternet üzerinden bilişim"], "answer": 3},
+    {"text": "İlk yüksek seviyeli programlama dillerinden biri hangisidir?", "difficulty": "hard", "choices": ["Fortran", "Python", "Java", "C++"], "answer": 0},
+    {"text": "\"Big O\" notasyonu yazılımda neyi ifade eder?", "difficulty": "hard", "choices": ["Dosya boyutu", "Algoritma karmaşıklığı", "Ekran çözünürlüğü", "Ağ hızı"], "answer": 1},
+    {"text": "İlk bilgisayar virüsleri genel olarak hangi on yılda ortaya çıktı?", "difficulty": "hard", "choices": ["1960'lar", "1970'ler", "1980'ler", "1990'lar"], "answer": 2},
+    {"text": "Açık kaynak hareketinin önde gelen isimlerinden biri kimdir?", "difficulty": "hard", "choices": ["Bill Gates", "Steve Jobs", "Mark Zuckerberg", "Linus Torvalds"], "answer": 3},
+    {"text": "TCP/IP neyin temel protokol takımıdır?", "difficulty": "hard", "choices": ["İnternet", "Ekran kartı", "Yazıcı", "Bluetooth"], "answer": 0},
+    {"text": "Nesne yönelimli programlamada \"kalıtım\" ne anlama gelir?", "difficulty": "hard", "choices": ["Veri şifreleme", "Alt sınıfa özellik aktarımı", "Bellek yönetimi", "Hata yönetimi"], "answer": 1}
   ]
 }

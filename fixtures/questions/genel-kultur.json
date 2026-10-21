@@ -1,23 +1,35 @@
 {
   "category": {"slug": "genel-kultur", "name": "Genel Kültür", "icon": "globe", "color": "#F5C98B", "order": 2},
   "questions": [
-    {
-      "text": "Dünyanın en büyük okyanusu hangisidir?",
-      "difficulty": "easy",
-      "choices": ["Atlas Okyanusu", "Pasifik Okyanusu", "Hint Okyanusu", "Arktik Okyanusu"],
-      "answer": 1
-    },
-    {
-      "text": "Bir hafta kaç gündür?",
-      "difficulty": "medium",
-      "choices": ["5", "6", "7", "8"],
-      "answer": 2
-    },
-    {
-      "text": "Periyodik tabloda en hafif element hangisidir?",
-      "difficulty": "hard",
-      "choices": ["Helyum", "Oksijen", "Hidrojen", "Karbon"],
-      "answer": 2
-    }
+    {"text": "Dünyanın en büyük okyanusu hangisidir?", "difficulty": "easy", "choices": ["Pasifik", "Atlas", "Hint", "Arktik"], "answer": 0},
+    {"text": "Bir yılda kaç ay vardır?", "difficulty": "easy", "choices": ["10", "12", "11", "13"], "answer": 1},
+    {"text": "İnsan vücudunda en büyük organ hangisidir?", "difficulty": "easy", "choices": ["Kalp", "Akciğer", "Deri", "Karaciğer"], "answer": 2},
+    {"text": "Dünyanın en uzun nehri hangisidir?", "difficulty": "easy", "choices": ["Amazon", "Mississippi", "Yangtze", "Nil"], "answer": 3},
+    {"text": "Bir haftada kaç gün vardır?", "difficulty": "easy", "choices": ["7", "5", "6", "8"], "answer": 0},
+    {"text": "Gökkuşağında kaç renk bulunur?", "difficulty": "easy", "choices": ["6", "7", "5", "8"], "answer": 1},
+    {"text": "Dünyanın en yüksek dağı hangisidir?", "difficulty": "easy", "choices": ["Kilimanjaro", "Aconcagua", "Everest", "Denali"], "answer": 2},
+    {"text": "İnsan kalbinde kaç oda bulunur?", "difficulty": "easy", "choices": ["2", "3", "5", "4"], "answer": 3},
+    {"text": "Bir metre kaç santimetredir?", "difficulty": "easy", "choices": ["100", "10", "1000", "10000"], "answer": 0},
+    {"text": "Dünyanın en büyük kıtası hangisidir?", "difficulty": "easy", "choices": ["Afrika", "Asya", "Avrupa", "Amerika"], "answer": 1},
+    {"text": "Güneş sistemindeki en büyük gezegen hangisidir?", "difficulty": "easy", "choices": ["Satürn", "Dünya", "Jüpiter", "Neptün"], "answer": 2},
+    {"text": "Bir düzine kaç taneye eşittir?", "difficulty": "easy", "choices": ["10", "15", "20", "12"], "answer": 3},
+    {"text": "Dünyanın en küçük ülkesi hangisidir?", "difficulty": "medium", "choices": ["Vatikan", "Monako", "San Marino", "Lihtenştayn"], "answer": 0},
+    {"text": "Yetişkin bir insan vücudunda kaç kemik bulunur?", "difficulty": "medium", "choices": ["186", "206", "196", "216"], "answer": 1},
+    {"text": "Periyodik tabloda en hafif element hangisidir?", "difficulty": "medium", "choices": ["Helyum", "Oksijen", "Hidrojen", "Karbon"], "answer": 2},
+    {"text": "Dünyanın en büyük adası hangisidir?", "difficulty": "medium", "choices": ["Madagaskar", "Borneo", "Yeni Gine", "Grönland"], "answer": 3},
+    {"text": "\"Kızıl Gezegen\" olarak bilinen gezegen hangisidir?", "difficulty": "medium", "choices": ["Mars", "Venüs", "Jüpiter", "Merkür"], "answer": 0},
+    {"text": "İnsan gözünde renkleri algılayan hücrelere ne ad verilir?", "difficulty": "medium", "choices": ["Çubuk", "Koni", "Nöron", "Retina"], "answer": 1},
+    {"text": "Yüzölçümü bakımından dünyanın en büyük ülkesi hangisidir?", "difficulty": "medium", "choices": ["Kanada", "ABD", "Rusya", "Çin"], "answer": 2},
+    {"text": "İnsan vücudundaki en uzun kemik hangisidir?", "difficulty": "medium", "choices": ["Tibia", "Humerus", "Radius", "Femur"], "answer": 3},
+    {"text": "Oda sıcaklığında sıvı halde bulunan tek metal hangisidir?", "difficulty": "medium", "choices": ["Civa", "Kurşun", "Çinko", "Bakır"], "answer": 0},
+    {"text": "Dünya kendi ekseni etrafında bir turu kaç saatte tamamlar?", "difficulty": "medium", "choices": ["12", "24", "18", "36"], "answer": 1},
+    {"text": "Kanı vücutta pompalayan organ hangisidir?", "difficulty": "medium", "choices": ["Akciğer", "Böbrek", "Kalp", "Karaciğer"], "answer": 2},
+    {"text": "Bitkilerin fotosentez için kullandığı ana gaz hangisidir?", "difficulty": "medium", "choices": ["Oksijen", "Azot", "Hidrojen", "Karbondioksit"], "answer": 3},
+    {"text": "Dünyanın en derin okyanus çukuru hangisidir?", "difficulty": "hard", "choices": ["Mariana Çukuru", "Tonga Çukuru", "Filipin Çukuru", "Peru-Şili Çukuru"], "answer": 0},
+    {"text": "İnsan vücudundaki en küçük kemikler nerede bulunur?", "difficulty": "hard", "choices": ["El", "Kulak", "Ayak", "Burun"], "answer": 1},
+    {"text": "Periyodik tabloyu ilk düzenleyen bilim insanı kimdir?", "difficulty": "hard", "choices": ["Einstein", "Newton", "Mendeleyev", "Curie"], "answer": 2},
+    {"text": "Dünya üzerindeki en tuzlu su kütlesi hangisidir?", "difficulty": "hard", "choices": ["Hazar Denizi", "Kızıldeniz", "Aral Gölü", "Lut Gölü"], "answer": 3},
+    {"text": "Atom numarası 1 olan element hangisidir?", "difficulty": "hard", "choices": ["Hidrojen", "Helyum", "Lityum", "Karbon"], "answer": 0},
+    {"text": "Dünyanın ilk yapay uydusunun adı nedir?", "difficulty": "hard", "choices": ["Apollo 11", "Sputnik 1", "Voyager 1", "Explorer 1"], "answer": 1}
   ]
 }

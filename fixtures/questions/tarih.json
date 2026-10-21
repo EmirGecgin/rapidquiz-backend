@@ -1,23 +1,35 @@
 {
   "category": {"slug": "tarih", "name": "Tarih", "icon": "landmark", "color": "#E8B4A0", "order": 5},
   "questions": [
-    {
-      "text": "İstanbul hangi yılda fethedildi?",
-      "difficulty": "easy",
-      "choices": ["1453", "1071", "1299", "1517"],
-      "answer": 0
-    },
-    {
-      "text": "Türkiye Cumhuriyeti hangi yılda ilan edildi?",
-      "difficulty": "medium",
-      "choices": ["1920", "1923", "1929", "1938"],
-      "answer": 1
-    },
-    {
-      "text": "Malazgirt Savaşı hangi yılda yapıldı?",
-      "difficulty": "hard",
-      "choices": ["1453", "1071", "1299", "1517"],
-      "answer": 1
-    }
+    {"text": "İstanbul hangi yılda fethedildi?", "difficulty": "easy", "choices": ["1453", "1071", "1299", "1517"], "answer": 0},
+    {"text": "Türkiye Cumhuriyeti hangi yılda ilan edildi?", "difficulty": "easy", "choices": ["1920", "1923", "1929", "1938"], "answer": 1},
+    {"text": "Mustafa Kemal Atatürk hangi yılda doğdu?", "difficulty": "easy", "choices": ["1871", "1891", "1881", "1901"], "answer": 2},
+    {"text": "İkinci Dünya Savaşı hangi yılda sona erdi?", "difficulty": "easy", "choices": ["1943", "1944", "1946", "1945"], "answer": 3},
+    {"text": "Büyük piramitler en çok hangi ülkeyle özdeşleşmiştir?", "difficulty": "easy", "choices": ["Mısır", "Yunanistan", "İtalya", "İran"], "answer": 0},
+    {"text": "Kolezyum hangi uygarlık tarafından inşa edilmiştir?", "difficulty": "easy", "choices": ["Yunan", "Roma", "Mısır", "Pers"], "answer": 1},
+    {"text": "Ankara, Türkiye'nin başkenti ne zaman oldu?", "difficulty": "easy", "choices": ["1920", "1930", "1923", "1950"], "answer": 2},
+    {"text": "Çin Seddi en çok hangi amaçla inşa edilmiştir?", "difficulty": "easy", "choices": ["Ticaret", "Turizm", "Sulama", "Savunma"], "answer": 3},
+    {"text": "Osmanlı Devleti'nin kurucusu kimdir?", "difficulty": "easy", "choices": ["Osman Bey", "Orhan Bey", "Fatih Sultan Mehmet", "Kanuni Sultan Süleyman"], "answer": 0},
+    {"text": "1912'de hangi gemi battı?", "difficulty": "easy", "choices": ["Lusitania", "Titanic", "Bismarck", "Queen Mary"], "answer": 1},
+    {"text": "Birinci Dünya Savaşı hangi yılda başladı?", "difficulty": "easy", "choices": ["1912", "1916", "1914", "1918"], "answer": 2},
+    {"text": "Amerika kıtası Avrupalılarca hangi yüzyılda keşfedildi?", "difficulty": "easy", "choices": ["13. yüzyıl", "14. yüzyıl", "16. yüzyıl", "15. yüzyıl"], "answer": 3},
+    {"text": "Malazgirt Savaşı hangi yılda yapıldı?", "difficulty": "medium", "choices": ["1071", "1453", "1299", "1517"], "answer": 0},
+    {"text": "Fransız Devrimi hangi yılda başladı?", "difficulty": "medium", "choices": ["1776", "1789", "1799", "1804"], "answer": 1},
+    {"text": "Kanuni Sultan Süleyman hangi hanedanın padişahıydı?", "difficulty": "medium", "choices": ["Selçuklu", "Bizans", "Osmanlı", "Safevi"], "answer": 2},
+    {"text": "Berlin Duvarı hangi yılda yıkıldı?", "difficulty": "medium", "choices": ["1979", "1991", "1999", "1989"], "answer": 3},
+    {"text": "Antik Yunan'da demokrasi ilk olarak hangi şehirde uygulandı?", "difficulty": "medium", "choices": ["Atina", "Sparta", "Korint", "Tebai"], "answer": 0},
+    {"text": "Napolyon Bonapart hangi ülkenin imparatoruydu?", "difficulty": "medium", "choices": ["İtalya", "Fransa", "İspanya", "Almanya"], "answer": 1},
+    {"text": "Çanakkale Savaşları hangi yılda gerçekleşti?", "difficulty": "medium", "choices": ["1913", "1914", "1915", "1916"], "answer": 2},
+    {"text": "Sanayi Devrimi ilk olarak hangi ülkede başladı?", "difficulty": "medium", "choices": ["Fransa", "Almanya", "ABD", "İngiltere"], "answer": 3},
+    {"text": "Büyük Gize Piramidi hangi firavun için yapılmıştır?", "difficulty": "medium", "choices": ["Keops", "Tutankamon", "Ramses", "Akhenaton"], "answer": 0},
+    {"text": "Roma İmparatorluğu hangi yılda ikiye ayrıldı?", "difficulty": "medium", "choices": ["295", "395", "495", "595"], "answer": 1},
+    {"text": "Reform (Protestanlık) hareketi hangi yüzyılda başladı?", "difficulty": "medium", "choices": ["14. yüzyıl", "15. yüzyıl", "16. yüzyıl", "17. yüzyıl"], "answer": 2},
+    {"text": "İpek Yolu hangi iki kıtayı birbirine bağlardı?", "difficulty": "medium", "choices": ["Afrika ve Avrupa", "Asya ve Afrika", "Amerika ve Avrupa", "Asya ve Avrupa"], "answer": 3},
+    {"text": "Hammurabi Kanunları hangi uygarlığa aittir?", "difficulty": "hard", "choices": ["Babil", "Sümer", "Asur", "Mısır"], "answer": 0},
+    {"text": "Bizans İmparatorluğu hangi yılda sona erdi?", "difficulty": "hard", "choices": ["1393", "1453", "1423", "1493"], "answer": 1},
+    {"text": "Vestfalya Antlaşması hangi savaşı sona erdirdi?", "difficulty": "hard", "choices": ["Yüz Yıl Savaşları", "Napolyon Savaşları", "Otuz Yıl Savaşları", "Birinci Dünya Savaşı"], "answer": 2},
+    {"text": "Çivi yazısını hangi uygarlık geliştirmiştir?", "difficulty": "hard", "choices": ["Mısırlılar", "Fenikeliler", "Hititler", "Sümerler"], "answer": 3},
+    {"text": "Magna Carta hangi yılda imzalandı?", "difficulty": "hard", "choices": ["1215", "1115", "1315", "1415"], "answer": 0},
+    {"text": "Osmanlı Devleti resmen hangi yılda sona erdi?", "difficulty": "hard", "choices": ["1918", "1922", "1920", "1924"], "answer": 1}
   ]
 }
