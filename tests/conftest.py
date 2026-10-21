@@ -2,9 +2,16 @@ from contextlib import contextmanager
 from unittest import mock
 
 import pytest
+from django.core.cache import cache
 from rest_framework.test import APIClient
 
 from apps.catalog.models import Category, Choice, Question
+
+
+@pytest.fixture(autouse=True)
+def _clear_throttle_cache():
+    cache.clear()
+    yield
 
 
 @pytest.fixture

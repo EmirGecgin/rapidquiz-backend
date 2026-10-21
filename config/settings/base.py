@@ -108,6 +108,10 @@ REST_FRAMEWORK = {
     "EXCEPTION_HANDLER": "config.exceptions.custom_exception_handler",
     "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_THROTTLE_RATES": {
+        "session_create": "10/min",
+        "answer_submit": "120/min",
+    },
 }
 
 SPECTACULAR_SETTINGS = {

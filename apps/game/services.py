@@ -11,6 +11,7 @@ from apps.catalog.models import Category, Choice, Question
 
 from .exceptions import AlreadyAnswered, InvalidName, InvalidToken, QuestionMismatch, SessionExpired, SessionFinished
 from .models import QuizSession, SessionAnswer
+from .profanity import contains_profanity
 
 TOTAL_QUESTIONS = 10
 DIFFICULTY_TARGETS = {"easy": 4, "medium": 4, "hard": 2}
@@ -190,7 +191,7 @@ def finish_session(session, player_name, now=None):
         raise ValidationError("Tur henüz bitmedi.")
 
     name = (player_name or "").strip()
-    if not (2 <= len(name) <= 20) or not NAME_PATTERN.match(name):
+    if not (2 <= len(name) <= 20) or not NAME_PATTERN.match(name) or contains_profanity(name):
         raise InvalidName()
 
     session.player_name = name

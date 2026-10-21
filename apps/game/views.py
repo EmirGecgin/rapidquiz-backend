@@ -3,9 +3,12 @@ from rest_framework.views import APIView
 
 from . import services
 from .serializers import AnswerRequestSerializer, FinishRequestSerializer, StartSessionRequestSerializer
+from .throttling import AnswerThrottle, SessionCreateThrottle
 
 
 class SessionCreateView(APIView):
+    throttle_classes = [SessionCreateThrottle]
+
     def post(self, request):
         serializer = StartSessionRequestSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -33,6 +36,8 @@ class NextQuestionView(APIView):
 
 
 class SubmitAnswerView(APIView):
+    throttle_classes = [AnswerThrottle]
+
     def post(self, request, session_id):
         session = services.get_authenticated_session(session_id, request.headers.get("X-Session-Token"))
         serializer = AnswerRequestSerializer(data=request.data)
